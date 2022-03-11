@@ -49,7 +49,7 @@ function ListadoPeliculas() {
 
 
   return (
-    <PageWrapper>
+    <PageWrapper showSidebar={true}>
 
 	
 

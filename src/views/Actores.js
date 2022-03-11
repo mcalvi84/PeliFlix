@@ -1,10 +1,14 @@
 import React from 'react';
+import PageWrapper from './PageWrapper';
+
+
 
 
 export default function Actores(){
 	
 		return (
   
+      <PageWrapper>
 			<div>
      
 			<header className="ht-header">
@@ -366,7 +370,8 @@ export default function Actores(){
         </div>
       </div>
 	  </div>
-	  </div>		
+	  </div> 
+    </PageWrapper>
   );
 	}
 	

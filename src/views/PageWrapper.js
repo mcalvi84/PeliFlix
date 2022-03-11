@@ -3,8 +3,9 @@ import React from 'react';
 
 export default function PageWrapper(props){
 
+	console.log(props.showSidebar);
      return (
-        <div>
+        <div>	
      
 <header className="ht-header">
 	<div className="container">
@@ -114,7 +115,7 @@ export default function PageWrapper(props){
 				</div>
 				
 				{props.children}
-
+  
 		<div class="topbar-filter">
 					<label>Películas por página:</label>
 					<select>
@@ -130,6 +131,7 @@ export default function PageWrapper(props){
 				</div>
 			</div>
 			<div className="col-md-4 col-sm-12 col-xs-12">
+				{props.showSidebar&&
 				<div className="sidebar">
 					<div className="searh-form">
 						<h4 className="sb-title">Buscador de Películas</h4>
@@ -206,8 +208,8 @@ export default function PageWrapper(props){
 							<div className="tweet item" id=""></div>
 						</div>							
 					</div>
-				</div>
-			</div>
+				</div>  }
+			</div> 
 		</div>
 	</div>
 </div>
